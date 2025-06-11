@@ -1,76 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COOLkies</title>
+  <title>COOlkies</title>
   <style>
     body {
       background-color: #F3B0C3;
+      margin: 0;
       font-family: sans-serif;
     }
 
-    .grid-container {
+    .white-bar {
+      height: 30px;
+      background-color: white;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    form {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      max-width: 1200px;
-      margin: auto;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    .grid-container button {
-      background: none;
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
       border: none;
-      text-align: center;
       padding: 10px;
       cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
 
-    .grid-container button a {
+    button:hover {
+      transform: scale(1.03);
+    }
+
+    a {
       text-decoration: none;
       color: black;
       font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
-    .grid-container img {
+    img {
       width: 150px;
       height: auto;
-      display: block;
-      margin: 0 auto;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <h1>COOLkies</h1>
+  <div class="white-bar"></div>
+
+  <h1>COOlkies</h1>
   <h2>Sign up</h2>
+
   <form>
-    <div class="grid-container">
-      <button><a href="http://127.0.0.1:5500/1/index.html">cokie clássico</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/2/index.html">cokie integral de aveia de mel</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/3/index.html">cokie de banana de aveia</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/4/index.html">cokie de manteiga de amendoim</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/5/index.html">cokie red velvet</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/6/index.html">cokie de nutella</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/7/index.html">cokie de limão siciliano</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/8/index.html">cokie de chocolate branco e cranberry</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/9/index.html">cokie de coco</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/10/index.html">cokie low carb de amêndoas</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/11/index.html">cokie de chocolate amargo e nozes</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/12/index.html">cokie vegano de aveia e cacau</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/13/index.html">cokie recheado com doce de leite</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/14/index.html">cokie de gengibre (gingerbread)</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/15/index.html">cokie com pedaços de caramelo e flor de sal</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/16/index.html">cokie de limão siciliano com gotas de chocolate branco</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/17/index.html">cokie de baunilha com confeitos coloridos</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/18/index.html">cokie de castanha-do-pará com chocolate</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/19/index.html">cokie de amendoim com chocolate</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><a href="http://127.0.0.1:5500/20/index.html">cokie integral de banana e aveia</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></button>
-      <button><h2>COOLKIES</h2></button>
-      <button><h3>COOOOLKIES 1 ></h3></button>
-    </div>
+    <button><a href="http://127.0.0.1:5500/1/index.html">Cookie clássico</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/2/index.html">Cookie integral de aveia e mel</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/3/index.html">Cookie de banana e aveia</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/4/index.html">Cookie de manteiga de amendoim</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/5/index.html">Cookie red velvet</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/6/index.html">Cookie de Nutella</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/7/index.html">Cookie de limão-siciliano</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/8/index.html">Cookie de chocolate branco e cranberry</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/9/index.html">Cookie de coco</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/10/index.html">Cookie low carb de amêndoas</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/11/index.html">Cookie de chocolate amargo e nozes</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/12/index.html">Cookie vegano de aveia e cacau</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/13/index.html">Cookie recheado com doce de leite</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/14/index.html">Cookie de gengibre (Gingerbread)</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/15/index.html">Cookie com pedaços de caramelo e flor de sal</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/16/index.html">Cookie de limão-siciliano com gotas de chocolate branco</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/17/index.html">Cookie de baunilha com confeitos coloridos</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/18/index.html">Cookie de castanha-do-pará com chocolate</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/19/index.html">Cookie de amendoim com chocolate</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><a href="http://127.0.0.1:5500/20/index.html">Cookie integral de banana e aveia</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
+    <button><h2>COOlkies</h2></button>
+    <button><h3>COOlkies 1 ></h3></button>
   </form>
+
+  <div class="white-bar"></div>
 </body>
 </html>
+
 
