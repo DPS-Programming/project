@@ -8,7 +8,7 @@
     body {
       background-color: #F4C2C2;
       margin: 0;
-      font-family: sans-serif;
+      font-family: 'Brush Script MT', cursive;
     }
 
     .white-bar {
@@ -29,65 +29,58 @@
       margin: 0 auto;
     }
 
-    button {
+    .recipe-button {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: white;
       border: none;
       padding: 10px;
-      cursor: pointer;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    button:hover {
-      transform: scale(1.03);
-    }
-
-    a {
       text-decoration: none;
       color: black;
       font-weight: bold;
-      margin-bottom: 8px;
+      transition: transform 0.2s;
     }
 
-    img {
+    .recipe-button:hover {
+      transform: scale(1.03);
+    }
+
+    .recipe-button img {
       width: 150px;
       height: auto;
       border-radius: 4px;
+      margin-top: 8px;
     }
   </style>
 </head>
 <body>
-    <font-family: 'Brush Script MT', cursive;> 
-  <h1 style="font-family: 'Brush Script MT', cursive;">COOlkies</h1>
+  <h1>COOlkies</h1>
   <div class="white-bar"></div>
 
-
   <form>
-    <button><a href="https://dps-programming.github.io/project/classico">Cookie clássico</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150">
-    <button><a href="https://dps-programming.github.io/project/intam">Cookie integral de aveia e mel</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/bananaav">Cookie de banana e aveia</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/manamen">Cookie de manteiga de amendoim</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/redvelv">Cookie red velvet</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/nutte">Cookie de Nutella</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/limsci">Cookie de limão-siciliano</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/choccranb">Cookie de chocolate branco e cranberry</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/coco">Cookie de coco</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/lcamen">Cookie low carb de amêndoas</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/chocnoz">Cookie de chocolate amargo e nozes</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/vegavcacau">Cookie vegano de aveia e cacau</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/rechdocedeleite">Cookie recheado com doce de leite</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/gingerbread">Cookie de gengibre (Gingerbread)</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/carmsal">Cookie com pedaços de caramelo e flor de sal</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/limscichoc">Cookie de limão-siciliano com gotas de chocolate branco</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/bauniconfeito">Cookie de baunilha com confeitos coloridos</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/castanhachoco">Cookie de castanha-do-pará com chocolate</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/amendchoco">Cookie de amendoim com chocolate</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><a href="https://dps-programming.github.io/project/intbanav">Cookie integral de banana e aveia</a><img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg" width="150"></button>
-    <button><h2>COOlkies</h2></button>
+    <a href="https://dps-programming.github.io/project/classico" class="recipe-button">Cookie clássico<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/intam" class="recipe-button">Cookie integral de aveia e mel<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/bananaav" class="recipe-button">Cookie de banana e aveia<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/manamen" class="recipe-button">Cookie de manteiga de amendoim<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/redvelv" class="recipe-button">Cookie red velvet<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/nutte" class="recipe-button">Cookie de Nutella<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/limsci" class="recipe-button">Cookie de limão-siciliano<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/choccranb" class="recipe-button">Cookie de chocolate branco e cranberry<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/coco" class="recipe-button">Cookie de coco<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/lcamen" class="recipe-button">Cookie low carb de amêndoas<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/chocnoz" class="recipe-button">Cookie de chocolate amargo e nozes<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/vegavcacau" class="recipe-button">Cookie vegano de aveia e cacau<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/rechdocedeleite" class="recipe-button">Cookie recheado com doce de leite<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/gingerbread" class="recipe-button">Cookie de gengibre (Gingerbread)<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/carmsal" class="recipe-button">Cookie com pedaços de caramelo e flor de sal<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/limscichoc" class="recipe-button">Cookie de limão-siciliano com gotas de chocolate branco<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/bauniconfeito" class="recipe-button">Cookie de baunilha com confeitos coloridos<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/castanhachoco" class="recipe-button">Cookie de castanha-do-pará com chocolate<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/amendchoco" class="recipe-button">Cookie de amendoim com chocolate<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
+    <a href="https://dps-programming.github.io/project/intbanav" class="recipe-button">Cookie integral de banana e aveia<img src="https://institucional.atlaseletro.com.br/wp-content/uploads/2023/08/image-12--918x538.jpg"></a>
   </form>
 
   <div class="white-bar"></div>
