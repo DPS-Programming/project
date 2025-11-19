@@ -6,27 +6,51 @@
   <title>COOlkies</title>
   <style>
     body {
-      background-color: #F4C2C2;
+      background: linear-gradient(135deg, #F4C2C2, #F7D9D9);
       margin: 0;
       font-family: 'Brush Script MT', cursive;
     }
 
     .white-bar {
-      height: 10px;
+      height: 12px;
       background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
-    h1, h2 {
+    h1 {
       text-align: center;
+      font-size: 4rem;
+      margin-top: 20px;
+      color: #8B3A3A;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     }
 
     form {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      padding: 20px;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      max-width: 1200px;
       margin: 0 auto;
+    }
+
+    .button {
+      grid-column: 1 / -1;
+      text-align: center;
+      background-color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 1.4rem;
+      color: #8B3A3A;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.25);
     }
 
     .recipe-button {
@@ -35,24 +59,27 @@
       align-items: center;
       background-color: white;
       border: none;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 15px;
+      border-radius: 14px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
       text-decoration: none;
-      color: black;
+      color: #3a3a3a;
+      font-size: 1.3rem;
       font-weight: bold;
-      transition: transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .recipe-button:hover {
-      transform: scale(1.03);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
     }
 
     .recipe-button img {
-      width: 150px;
+      width: 160px;
       height: auto;
-      border-radius: 4px;
-      margin-top: 8px;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
   </style>
 </head>
@@ -81,11 +108,4 @@
     <a href="https://dps-programming.github.io/project/bauniconfeito" class="recipe-button">Cookie de baunilha com confeitos coloridos<img src="https://www.receitasdemae.com.br/wp-content/uploads/2013/11/cookie-colorido.jpg"></a>
     <a href="https://dps-programming.github.io/project/castanhachoco" class="recipe-button">Cookie de castanha-do-pará com chocolate<img src="https://culinaristico.com.br/a/files/recipes/_MG_1233.jpg"></a>
     <a href="https://dps-programming.github.io/project/amendchoco" class="recipe-button">Cookie de amendoim com chocolate<img src="https://m.ftscrt.com/static/recipe/d8fef223-f90a-4fd7-b72c-4a8328a88cc1_fs2.jpg"></a>
-    <a href="https://dps-programming.github.io/project/intbanav" class="recipe-button">Cookie integral de banana e aveia<img src="https://panelaterapia.com/wp-content/uploads/2013/11/cookiesbanana.jpg"></a>
-  </form>
-
-  <div class="white-bar"></div>
-</body>
-</html>
-
-
+    <a href="https://dps-programming.github.io/project/intbanav" class="recipe-button">Cookie integral de banana e aveia<img src="
